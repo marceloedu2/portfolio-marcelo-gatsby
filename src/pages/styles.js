@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import { icons } from "react-icons"
 
 export const ContentIntro = styled.div`
   display: flex;
@@ -6,7 +7,7 @@ export const ContentIntro = styled.div`
   flex-direction: column;
   align-items: center;
   width: 100%;
-  height: 600px;
+  height: 700px;
 `
 export const TitleIntro = styled.div`
   margin-top: 60px;
@@ -20,7 +21,7 @@ export const SubTitleIntro = styled.div`
 `
 export const Image = styled.img`
   width: 600px;
-  margin-top: 30px;
+  margin-top: 100px;
 `
 export const ContainerAbout = styled.div`
   display: flex;
@@ -41,6 +42,8 @@ export const TitleAbout = styled.div`
   text-align: center;
   height: 60px;
   color: ${props => props.theme.background};
+  cursor: default;
+
   &:after {
     content: " ";
     width: 60px;
@@ -63,11 +66,33 @@ export const CardAbout = styled.div`
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  height: 300px;
+  height: 350px;
   margin: 0 20px;
 `
-
-export  const ImageCard = styled.img`
-  width: 120px;
-  color: ${props => props.theme.background}
+export const IconCard = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: ${props => props.theme.background};
+`
+export const TitleCard = styled.div`
+  font-size: 32px;
+  font-weight: bold;
+  margin-top: 20px;
+  color: ${props => props.theme.background};
+  cursor: default;
+`
+export const TextCard = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  width: 100%;
+  margin-top: 30px;
+  cursor: default;
+  color: ${props => props.theme.background};
 `
