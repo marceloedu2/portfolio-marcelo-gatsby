@@ -22,12 +22,19 @@ export const Image = styled.img`
   width: 600px;
   margin-top: 30px;
 `
-export const ContentDesc = styled.div`
+export const ContentAbout = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   background-color: ${props => props.theme.primary};
   width: 100%;
   height: 600px;
+`
+
+export const TitleAbout = styled.div`
+  font-size: 32px;
+  margin-top: 30px;
+  color: ${props => props.theme.background};
+  border-bottom: 2px solid ${props => props.theme.background};
 `

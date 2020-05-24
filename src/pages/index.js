@@ -2,11 +2,11 @@ import React from "react"
 import GlobalStyle from "../styles/global"
 
 import {
-  ContentDesc,
+  ContentAbout,
   ContentIntro,
   Image,
-  SubTitleIntro,
-  TitleIntro,
+  SubTitleIntro, TitleAbout,
+  TitleIntro
 } from "./styles"
 import NavBar from "../components/NavBar"
 
@@ -20,11 +20,14 @@ export default function Home() {
           Olá, é um prazer ter você aqui. Meu nome é Marcelo Araujo.
         </TitleIntro>
         <SubTitleIntro>
-          Se você precisa de um desenvolvedor FrontEnd, está no lugar certo.
+          Se você precisa de um desenvolvedor Web ou mobile, está no lugar
+          certo.
         </SubTitleIntro>
         <Image src={require("../assets/avatar.png")} alt="Avatar" />
       </ContentIntro>
-      <ContentDesc>teste</ContentDesc>
+      <ContentAbout>
+        <TitleAbout>Sobre</TitleAbout>
+      </ContentAbout>
     </>
   )
 }
