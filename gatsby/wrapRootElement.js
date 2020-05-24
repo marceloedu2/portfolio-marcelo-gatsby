@@ -1,7 +1,7 @@
-const React = require("react")
-const Layout = require("./src/componets/layout").default
-const { ThemeProvider } = require("styled-components")
+import React from "react"
+import { ThemeProvider } from "styled-components"
+import light from "../src/styles/theme/light"
 
-exports.wrapPageElement = ({ element, prop }) => {
-  return <Layout {...prop}>{element}</Layout>
+export const wrapRootElement = ({ element }) => {
+  return <ThemeProvider theme={light}>{element}</ThemeProvider>
 }
