@@ -2,9 +2,11 @@ import React from "react"
 import GlobalStyle from "../styles/global"
 
 import {
+  CardAbout,
+  ContainerAbout,
   ContentAbout,
   ContentIntro,
-  Image,
+  Image, ImageCard,
   SubTitleIntro, TitleAbout,
   TitleIntro
 } from "./styles"
@@ -25,9 +27,26 @@ export default function Home() {
         </SubTitleIntro>
         <Image src={require("../assets/avatar.png")} alt="Avatar" />
       </ContentIntro>
-      <ContentAbout>
+      <ContainerAbout>
         <TitleAbout>Sobre</TitleAbout>
-      </ContentAbout>
+        <ContentAbout>
+          <CardAbout>
+            <ImageCard src="https://images.clipartlogo.com/files/istock/previews/4897/48977460-vector-test-icon.jpg" />
+            <div>title</div>
+            <div>description</div>
+          </CardAbout>
+          <CardAbout>
+            <ImageCard src="https://images.clipartlogo.com/files/istock/previews/4897/48977460-vector-test-icon.jpg" />
+            <div>title</div>
+            <div>description</div>
+          </CardAbout>
+          <CardAbout>
+            <ImageCard src="https://images.clipartlogo.com/files/istock/previews/4897/48977460-vector-test-icon.jpg" />
+            <div>title</div>
+            <div>description</div>
+          </CardAbout>
+        </ContentAbout>
+      </ContainerAbout>
     </>
   )
 }
