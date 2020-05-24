@@ -1,8 +1,5 @@
 import styled from "styled-components"
 
-export const Container = styled.div`
-  color: ${props => props.theme.primary};
-`
 export const ContentIntro = styled.div`
   display: flex;
   justify-content: center;
@@ -12,6 +9,7 @@ export const ContentIntro = styled.div`
   height: 600px;
 `
 export const TitleIntro = styled.div`
+  margin-top: 60px;
   font-size: 38px;
   font-weight: bolder;
   color: ${props => props.theme.textColor};
@@ -21,8 +19,8 @@ export const SubTitleIntro = styled.div`
   margin-top: 10px;
 `
 export const Image = styled.img`
-  margin-top: 130px;
   width: 600px;
+  margin-top: 30px;
 `
 export const ContentDesc = styled.div`
   display: flex;
@@ -32,5 +30,4 @@ export const ContentDesc = styled.div`
   background-color: ${props => props.theme.primary};
   width: 100%;
   height: 600px;
-  
 `

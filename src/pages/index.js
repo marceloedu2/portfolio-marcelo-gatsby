@@ -2,13 +2,12 @@ import React from "react"
 import GlobalStyle from "../styles/global"
 
 import {
-  Container,
   ContentDesc,
   ContentIntro,
   Image,
   SubTitleIntro,
   TitleIntro,
-} from "./style"
+} from "./styles"
 import NavBar from "../components/NavBar"
 
 export default function Home() {
