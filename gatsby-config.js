@@ -13,7 +13,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-nprogress`,
       options: {
-        color: `#F95109`,
+        color: `#5400C1`,
         showSpinner: false,
       },
     },
@@ -30,9 +30,8 @@ module.exports = {
         short_name: `Portfolio marcelo araújo`,
         start_url: `/`,
         background_color: `#FFFF`,
-        theme_color: `#F95109`,
-        display: `standalone`,
-        icon: `./src/assets/images/DevLairIcon.png`,
+        theme_color: `#5400C1`,        display: `standalone`,
+        icon: `./src/assets/icon.png`,
       },
     },
     {

@@ -1,10 +1,13 @@
 import React from "react"
+import GlobalStyle from "../../styles/global"
 import { Container } from "./styles"
+import NavBar from "../../components/NavBar"
 
 const About = () => {
   return (
     <Container>
-      <h1>HELLO WORLD</h1>
+      <GlobalStyle />
+      <NavBar />
     </Container>
   )
 }
