@@ -1,5 +1,4 @@
 import styled, { css } from "styled-components"
-import media from "../../styles/media"
 
 export const Container = styled.div`
   display: flex;
@@ -10,19 +9,19 @@ export const Container = styled.div`
   padding: 30px 80px 30px 80px;
   position: relative;
   background-color: ${({ theme }) => theme.background};
-  @media (min-width: 720px) {
+  @media (max-width: 720px) {
     padding: 10px 20px;
   }
 `
 export const Image = styled.img`
   width: 60px;
-  @media (min-width: 720px) {
-    width: 40px;
+  @media (max-width: 720px) {
+    width: 50px;
   }
 `
 export const Contacts = styled.div`
   padding: 0 30px;
-  @media (min-width: 720px) {
+  @media (max-width: 720px) {
     display: none;
   }
 `

@@ -14,7 +14,7 @@ export default function HTML(props) {
         {props.headComponents}
       </head>
       <body {...props.bodyAttributes}>
-      <noscript>Use JavaScript dude!!!</noscript>
+        <noscript>Use JavaScript dude!!!</noscript>
         {props.preBodyComponents}
         <div
           key={`body`}
