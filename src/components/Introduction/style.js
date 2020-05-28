@@ -26,4 +26,7 @@ export const SubTitle = styled.div`
 export const Image = styled.img`
   width: 600px;
   margin: 100px 0 10px 0;
+  @media (max-width: 720px) {
+    width: 100%;
+  }
 `
