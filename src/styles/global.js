@@ -37,4 +37,7 @@ export default createGlobalStyle`
   button {
     cursor: pointer;
   }
+  div {
+    cursor: default;
+  }
 `
