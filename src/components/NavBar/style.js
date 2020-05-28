@@ -10,21 +10,21 @@ export const Container = styled.div`
   padding: 30px 80px 30px 80px;
   position: relative;
   background-color: ${({ theme }) => theme.background};
-  ${media.lessThan("sm")`
-  padding: 10px 20px;
-  `}
+  @media (min-width: 720px) {
+    padding: 10px 20px;
+  }
 `
 export const Image = styled.img`
   width: 60px;
-  ${media.lessThan("sm")`
+  @media (min-width: 720px) {
     width: 40px;
-  `}
+  }
 `
 export const Contacts = styled.div`
   padding: 0 30px;
-  ${media.lessThan("sm")`
+  @media (min-width: 720px) {
     display: none;
-  `}
+  }
 `
 export const ContractsMobile = styled.div`
   button {
@@ -67,9 +67,9 @@ export const ContractsMobile = styled.div`
       }
     }
   }
-  ${media.greaterThan("sm")`
+  @media (min-width: 720px) {
     display: none;
-  `}
+  }
 `
 export const Link = styled.button`
   width: 120px;

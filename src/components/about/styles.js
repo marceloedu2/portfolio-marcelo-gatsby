@@ -1,5 +1,4 @@
 import styled from "styled-components"
-import media from "../../styles/media"
 
 export const Container = styled.div`
   display: flex;
@@ -10,9 +9,9 @@ export const Container = styled.div`
   width: 100%;
   height: 600px;
   padding: 20px;
-  ${media.lessThan("sm")`
+  @media (min-width: 720px) {
     height: auto;
-  `}
+  }
 `
 
 export const Title = styled.div`
@@ -80,9 +79,8 @@ export const TextCard = styled.div`
   margin-top: 20px;
   cursor: default;
   color: ${({ theme }) => theme.background};
-  ${media.lessThan("sm")`
+  @media (min-width: 720px) {
     padding-bottom: 60px;
     max-width: 100%;
-    
-  `}
+  }
 `
