@@ -87,7 +87,7 @@ export const TextCard = styled.div`
   margin-top: 20px;
   cursor: default;
   color: ${({ theme }) => theme.background};
-  @media (min-width: 720px) {
+  @media (max-width: 720px) {
     padding-bottom: 60px;
     max-width: 100%;
   }
