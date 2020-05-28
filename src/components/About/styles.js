@@ -26,7 +26,6 @@ export const Title = styled.div`
   height: 60px;
   margin-bottom: 60px;
   color: ${props => props.theme.background};
-  cursor: default;
   &:after {
     content: " ";
     width: 60px;

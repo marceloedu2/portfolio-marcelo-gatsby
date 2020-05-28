@@ -11,6 +11,9 @@ export const Container = styled.div`
   height: 800px;
   padding: 0 20px;
   background-color: ${({ theme }) => theme.primary};
+  @media (max-width: 720px) {
+    height: auto;
+  }
 `
 export const Title = styled.div`
   width: 100%;
@@ -19,6 +22,9 @@ export const Title = styled.div`
   font-size: 38px;
   font-weight: bolder;
   color: ${({ theme }) => theme.background};
+  @media (max-width: 720px) {
+    margin-top: 120px;
+  }
 `
 export const SubTitle = styled.div`
   font-size: 20px;
@@ -27,5 +33,8 @@ export const SubTitle = styled.div`
   color: ${({ theme }) => theme.background};
   a {
     color: ${({ theme }) => theme.darkWhite};
+  }
+  @media (max-width: 720px) {
+    margin-bottom: 120px;
   }
 `
