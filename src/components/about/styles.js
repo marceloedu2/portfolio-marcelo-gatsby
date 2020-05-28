@@ -1,72 +1,56 @@
 import styled from "styled-components"
-import { icons } from "react-icons"
+import media from "../../styles/media"
 
-export const ContentIntro = styled.div`
+export const Container = styled.div`
   display: flex;
-  justify-content: center;
+  flex-flow: row wrap;
   flex-direction: column;
   align-items: center;
-  width: 100%;
-  height: 700px;
-`
-export const TitleIntro = styled.div`
-  margin-top: 60px;
-  font-size: 38px;
-  font-weight: bolder;
-  color: ${props => props.theme.textColor};
-`
-export const SubTitleIntro = styled.div`
-  font-size: 24px;
-  margin-top: 10px;
-`
-export const Image = styled.img`
-  width: 600px;
-  margin-top: 100px;
-`
-export const ContainerAbout = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: ${props => props.theme.primary};
+  background-color: ${({ theme }) => theme.primary};
   width: 100%;
   height: 600px;
+  padding: 20px;
+  ${media.lessThan("sm")`
+    height: auto;
+  `}
 `
 
-export const TitleAbout = styled.div`
+export const Title = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
   font-size: 32px;
   margin-top: 30px;
   text-align: center;
   height: 60px;
+  margin-bottom: 60px;
   color: ${props => props.theme.background};
   cursor: default;
-
   &:after {
     content: " ";
     width: 60px;
     margin-top: 8px;
-    border-bottom: 3.5px solid ${props => props.theme.background};
+    border-bottom: 3.5px solid ${({ theme }) => theme.background};
   }
 `
-export const ContentAbout = styled.div`
+export const Content = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   margin: 20px 0;
-  width: 100%;
-  height: 100%;
+  height: auto;
+  max-width: 250px;
 `
-export const CardAbout = styled.div`
+export const Card = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  height: 350px;
+  min-height: 350px;
   margin: 0 20px;
 `
 export const IconCard = styled.div`
@@ -77,22 +61,28 @@ export const IconCard = styled.div`
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  background: ${props => props.theme.background};
+  background: ${({ theme }) => theme.background};
 `
 export const TitleCard = styled.div`
   font-size: 32px;
   font-weight: bold;
   margin-top: 20px;
-  color: ${props => props.theme.background};
+  color: ${({ theme }) => theme.background};
   cursor: default;
 `
 export const TextCard = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 18px;
-  width: 100%;
-  margin-top: 30px;
+  font-size: 22px;
+  text-align: center;
+  max-width: 350px;
+  margin-top: 20px;
   cursor: default;
-  color: ${props => props.theme.background};
+  color: ${({ theme }) => theme.background};
+  ${media.lessThan("sm")`
+    padding-bottom: 60px;
+    max-width: 100%;
+    
+  `}
 `
