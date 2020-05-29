@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled from "@xstyled/styled-components"
 
 export const Container = styled.div`
   display: flex;
@@ -20,20 +20,21 @@ export const Title = styled.div`
   justify-content: center;
   align-items: center;
   width: 100%;
-  font-size: 32px;
+  font-size: 6;
   font-weight: bold;
   margin-top: 30px;
   text-align: center;
   height: 60px;
   margin-bottom: 60px;
-  color: ${props => props.theme.textColor};
+  color: ${props => props.theme.darkBlue};
   &:after {
     content: " ";
     width: 60px;
     margin-top: 8px;
-    border-bottom: 3.5px solid ${({ theme }) => theme.textColor};
+    border-bottom: 3.5px solid ${({ theme }) => theme.darkBlue};
   }
 `
+
 export const Content = styled.div`
   display: flex;
   flex-direction: row;
@@ -41,7 +42,6 @@ export const Content = styled.div`
   align-items: self-start;
   height: 600px;
   width: 100%;
-  border: 1px solid red;
   margin-bottom: 20px;
   @media (max-width: 720px) {
     flex-flow: row wrap;
@@ -52,8 +52,16 @@ export const Card = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: start;
   width: 100%;
   height: 450px;
-  border: 1px solid blue;
+`
+
+export  const CardTitle = styled.div`
+ width: 100%;
+ font-size: 26px;
+`
+export const CardText = styled.div`
+  font-size: 18px;
+  margin-top: 20px;
 `

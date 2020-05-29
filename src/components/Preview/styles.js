@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled from "@xstyled/styled-components"
 
 export const Container = styled.div`
   display: flex;
@@ -17,12 +17,13 @@ export const Title = styled.div`
   margin-top: 60px;
   font-size: 38px;
   font-weight: bolder;
-  color: ${({ theme }) => theme.textColor};
+  color: ${({ theme }) => theme.darkBlue};
 `
 export const SubTitle = styled.div`
   font-size: 24px;
   margin-top: 10px;
   width: 100%;
+  color: ${({theme}) => theme.black}
 `
 export const Image = styled.img`
   width: 300px;

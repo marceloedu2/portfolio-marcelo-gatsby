@@ -1,5 +1,10 @@
 import React from "react"
-import { Card, Container, Content, Title } from "./styes"
+import { Card, CardText, CardTitle, Container, Content, Title } from "./styes"
+import {
+  FcLandscape,
+  FcAcceptDatabase,
+  FcMultipleSmartphones,
+} from "react-icons/fc"
 
 const Skills = () => {
   return (
@@ -7,19 +12,19 @@ const Skills = () => {
       <Title>Dev Skills</Title>
       <Content>
         <Card>
-
-          <div>title</div>
-          <div>desciption</div>
+          <FcLandscape size={120} />
+          <CardTitle>Front-end</CardTitle>
+          <CardText>desciption</CardText>
         </Card>
         <Card>
-
-          <div>title</div>
-          <div>desciption</div>
+          <FcAcceptDatabase size={120} />
+          <CardTitle>Back-end</CardTitle>
+          <CardText>desciption</CardText>
         </Card>
         <Card>
-
-          <div>title</div>
-          <div>desciption</div>
+          <FcMultipleSmartphones size={120} />
+          <CardTitle>Mobile</CardTitle>
+          <CardText>desciption</CardText>
         </Card>
       </Content>
     </Container>

@@ -1,4 +1,4 @@
-import styled, { css } from "styled-components"
+import styled, { css } from "@xstyled/styled-components"
 
 export const Container = styled.div`
   display: flex;
@@ -8,7 +8,7 @@ export const Container = styled.div`
   height: auto;
   padding: 30px 80px 30px 80px;
   position: relative;
-  background-color: ${({ theme }) => theme.background};
+  background-color: ${({ theme }) => theme.white};
   @media (max-width: 720px) {
     padding: 10px 20px;
   }
@@ -43,8 +43,8 @@ export const ContractsMobile = styled.div`
     padding: 10px 20px;
     margin: 10px;
     border-radius: 8px;
-    background-color: ${({ theme }) => theme.primary};
-    color: ${({ theme }) => theme.background};
+    background-color: ${({ theme }) => theme.purple};
+    color: ${({ theme }) => theme.white};
     ${({ open }) =>
       open &&
       css`
@@ -55,14 +55,14 @@ export const ContractsMobile = styled.div`
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      font-size: 28px;
+      font-size: 5;
       font-weight: bold;
       margin: 10px 0;
       &:after {
         content: " ";
         width: 80%;
         margin-top: 8px;
-        border-bottom: 1.5px solid ${({ theme }) => theme.background};
+        border-bottom: 1.5px solid ${({ theme }) => theme.white};
       }
     }
   }
@@ -73,14 +73,14 @@ export const ContractsMobile = styled.div`
 export const Link = styled.button`
   width: 120px;
   height: 40px;
-  color: ${props => props.theme.textDefault};
-  background-color: ${({ theme }) => theme.background};
+  color: ${({ theme }) => theme.black};
+  background-color: ${({ theme }) => theme.white};
   border: none;
   margin-right: 30px;
-  font-size: 16px;
+  font-size: 3;
   &&:hover {
-    color: ${props => props.theme.primary};
-    border-bottom: 2px solid ${({ theme }) => theme.primary};
+    color: ${({ theme }) => theme.purple};
+    border-bottom: 2px solid ${({ theme }) => theme.purple};
   }
 `
 
@@ -88,13 +88,13 @@ export const Button = styled.button`
   width: 120px;
   height: 45px;
   border-radius: 30px;
-  background-color: ${({ theme }) => theme.background};
-  border: 2px solid ${({ theme }) => theme.primary};
-  color: ${props => props.theme.primary};
-  font-size: 16px;
+  background-color: ${({ theme }) => theme.white};
+  border: 2px solid ${({ theme }) => theme.purple};
+  color: ${props => props.theme.purple};
+  font-size: 3;
   font-weight: bold;
   &&:hover {
-    background-color: ${({ theme }) => theme.primary};
-    color: ${({ theme }) => theme.background};
+    background-color: ${({ theme }) => theme.purple};
+    color: ${({ theme }) => theme.white};
   }
 `
