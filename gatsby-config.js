@@ -47,7 +47,7 @@ module.exports = {
               title: siteMetadata.title,
               separator: '|',
               author: 'Marcelo Eduardo Araujo',
-              background: '#FFFF'
+              background: '#FFFF',
               fontColor: '#5400C1',
               titleFontSize: 96,
               subtitleFontSize: 60,
