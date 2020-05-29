@@ -1,5 +1,4 @@
 import styled from "@xstyled/styled-components"
-import Img from "gatsby-image"
 
 export const Container = styled.div`
   display: flex;
@@ -26,7 +25,7 @@ export const SubTitle = styled.div`
   width: 100%;
   color: ${({theme}) => theme.black}
 `
-export const Image = styled(Img)`
+export const Image = styled.img`
   width: 300px;
   @media (max-width: 720px) {
     width: 100%;

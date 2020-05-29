@@ -1,6 +1,4 @@
 import styled, { css, up, down, keyframes } from "@xstyled/styled-components"
-import Img from "gatsby-image"
-
 
 const dropdown = keyframes`
   0% {
@@ -40,7 +38,7 @@ export const Container = styled.div`
     `
   )}
 `
-export const Image = styled(Img)`
+export const Image = styled.img`
   width: 60px;
   @media (max-width: 720px) {
   }

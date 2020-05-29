@@ -18,7 +18,6 @@ const NavBar = () => {
       setOpen(false)
     }
   }
-  const scrollToComponent = () => {}
 
   return (
     <Container>
