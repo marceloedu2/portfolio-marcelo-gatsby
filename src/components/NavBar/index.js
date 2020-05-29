@@ -18,10 +18,13 @@ const NavBar = () => {
       setOpen(false)
     }
   }
+  const scrollToComponent = () => {}
+
   return (
     <Container>
       <Image src={require("../../assets/icon.png")} alt="logo" />
       <Contacts>
+        <Link>Dev Skills</Link>
         <Link>Sobre</Link>
         <Button>Contatos</Button>
       </Contacts>
@@ -34,9 +37,9 @@ const NavBar = () => {
           {!open ? <FiAlignRight /> : <FiX />}
         </button>
         <ul>
+          <li>Contatos</li>
           <li>Sobre</li>
-          <li>Contatos</li>
-          <li>Contatos</li>
+          <li>Dev Skills</li>
           <li>Contatos</li>
           <li>Contatos</li>
         </ul>

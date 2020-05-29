@@ -4,6 +4,7 @@
  * See: https://www.gatsbyjs.org/docs/gatsby-config/
  */
 const siteMetadata = require("./config/metadata")
+const path = require("path")
 
 module.exports = {
   siteMetadata,
@@ -30,7 +31,8 @@ module.exports = {
         short_name: `Portfolio marcelo araújo`,
         start_url: `/`,
         background_color: `#FFFF`,
-        theme_color: `#5400C1`,        display: `standalone`,
+        theme_color: `#5400C1`,
+        display: `standalone`,
         icon: `./src/assets/icon.png`,
       },
     },
@@ -51,10 +53,19 @@ module.exports = {
       options: {
         path: `${__dirname}/src/pages`,
         ignore: {
-          patterns: [`**/styles.(js|ts)?(x)`]
+          patterns: [`**/styles.(js|ts)?(x)`],
         },
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: path.join(__dirname, `src`, `assets`),
+      },
+    },
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
     `gatsby-plugin-offline`,
   ],
 }

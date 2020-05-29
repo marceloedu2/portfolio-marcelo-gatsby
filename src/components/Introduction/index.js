@@ -5,7 +5,7 @@ const Introduction = () => {
   return (
     <Container>
       <Title>
-        Olá, Seja Bem Vindo! <br />
+        Olá, Tudo bem? <br />
         meu nome é Marcelo Eduardo Araújo,{" "}
       </Title>
       <SubTitle>
