@@ -56,9 +56,9 @@ export const Card = styled.div`
   height: 450px;
 `
 
-export  const CardTitle = styled.div`
- width: 100%;
- font-size: 26px;
+export const CardTitle = styled.div`
+  width: 100%;
+  font-size: 26px;
 `
 export const CardText = styled.div`
   font-size: 18px;

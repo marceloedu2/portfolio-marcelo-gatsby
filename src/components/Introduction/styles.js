@@ -10,7 +10,7 @@ export const Container = styled.div`
   width: 100%;
   height: 800px;
   padding: 0 20px;
-  background-color: ${({theme}) => theme.purple};
+  background-color: ${({ theme }) => theme.purple};
   @media (max-width: 720px) {
     height: auto;
   }

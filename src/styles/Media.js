@@ -9,6 +9,5 @@ const QueryBreakpoints = createMedia({
   },
 })
 
-
 export const mediaStyles = QueryBreakpoints.createMediaStyle()
 export const { Media, MediaContextProvider } = QueryBreakpoints

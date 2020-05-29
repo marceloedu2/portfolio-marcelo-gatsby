@@ -23,7 +23,7 @@ export const SubTitle = styled.div`
   font-size: 24px;
   margin-top: 10px;
   width: 100%;
-  color: ${({theme}) => theme.black}
+  color: ${({ theme }) => theme.black};
 `
 export const Image = styled.img`
   width: 300px;
