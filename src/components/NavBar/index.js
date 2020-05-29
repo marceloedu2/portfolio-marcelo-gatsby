@@ -8,11 +8,16 @@ import {
   Link,
 } from "./style"
 import { FiAlignRight, FiX } from "react-icons/fi"
-import Theme from "../../styles/colors"
 
 const NavBar = () => {
   const [open, setOpen] = useState(false)
 
+  document.onclick = event => {
+    const modal = document.querySelector("ul")
+    if (event.target !== modal && event.target.parentNode !== modal) {
+      setOpen(false)
+    }
+  }
   return (
     <Container>
       <Image src={require("../../assets/icon.png")} alt="logo" />
@@ -20,29 +25,21 @@ const NavBar = () => {
         <Link>Sobre</Link>
         <Button>Contatos</Button>
       </Contacts>
-      <ContractsMobile>
+      <ContractsMobile open={open}>
         <button
           onClick={() => {
             setOpen(!open)
           }}
         >
-          {!open ? (
-            <FiAlignRight open={open} size={60} color={Theme.primary} />
-          ) : (
-            <FiX open={open} size={60} color={Theme.primary} />
-          )}
+          {!open ? <FiAlignRight /> : <FiX />}
         </button>
-        {open && (
-          <>
-            <ul>
-              <li>Sobre</li>
-              <li>Contatos</li>
-              <li>Contatos</li>
-              <li>Contatos</li>
-              <li>Contatos</li>
-            </ul>
-          </>
-        )}
+        <ul>
+          <li>Sobre</li>
+          <li>Contatos</li>
+          <li>Contatos</li>
+          <li>Contatos</li>
+          <li>Contatos</li>
+        </ul>
       </ContractsMobile>
     </Container>
   )

@@ -1,4 +1,26 @@
-import styled, { css, up, down } from "@xstyled/styled-components"
+import styled, { css, up, down, keyframes } from "@xstyled/styled-components"
+
+const dropdown = keyframes`
+  0% {
+    opacity: 0;
+    transform: translateY(-200px);
+  }
+  80% {
+     opacity: 1;
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+`
+const buttonTransition = keyframes`
+  0% {
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+`
 
 export const Container = styled.div`
   display: flex;
@@ -19,7 +41,6 @@ export const Container = styled.div`
 export const Image = styled.img`
   width: 60px;
   @media (max-width: 720px) {
-    
   }
   ${down(
     "md",
@@ -47,8 +68,22 @@ export const ContractsMobile = styled.div`
     cursor: pointer;
     outline: inherit;
     border-radius: 4;
+    svg {
+      color: ${({ theme }) => theme.purple};
+      font-size: 60px;
+      // animation: ${buttonTransition} 0.3s 0s backwards;
+    }
   }
   ul {
+    ${({ open }) =>
+      open
+        ? css`
+            animation: ${dropdown} 0.3s 0s backwards;
+          `
+        : css`
+            animation: ${dropdown} 0.3s 0s forwards reverse;
+            display: none;
+          `};
     position: absolute;
     left: 0;
     right: 0;
