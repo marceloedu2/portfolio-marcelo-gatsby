@@ -3,11 +3,14 @@
  *
  * See: https://www.gatsbyjs.org/docs/gatsby-config/
  */
-const siteMetadata = require("./config/metadata")
 const path = require("path")
 
 module.exports = {
-  siteMetadata,
+  siteMetadata: {
+    title: `Portfolio - Marcelo Araujo - Densenvolvedor de sistemas`,
+    siteUrl: `https://www.marceloaraujodev.online`,
+    description: `Desenvolvedor Front-end, Back-end e Mobile.`,
+  },
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sitemap`,
@@ -66,6 +69,7 @@ module.exports = {
     },
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
+    `gatsby-source-filesystem`,
     `gatsby-plugin-offline`,
   ],
 }
