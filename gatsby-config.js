@@ -64,7 +64,6 @@ module.exports = {
     },
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
-    `gatsby-source-filesystem`,
     `gatsby-plugin-offline`,
   ],
 }
