@@ -1,9 +1,16 @@
 import React from "react"
-import { Card, CardText, CardTitle, Container, Content, Title } from "./styes"
+import {
+  Card,
+  CardDesciption,
+  CardTitle,
+  Container,
+  Content,
+  Title
+} from "./styes"
 import {
   FcLandscape,
   FcAcceptDatabase,
-  FcMultipleSmartphones,
+  FcMultipleSmartphones
 } from "react-icons/fc"
 
 const Skills = () => {
@@ -14,17 +21,38 @@ const Skills = () => {
         <Card>
           <FcLandscape size={120} />
           <CardTitle>Front-end</CardTitle>
-          <CardText>desciption</CardText>
+          <CardDesciption>
+            <h4>Skills</h4>
+            <div>
+              HTML, <br />
+              CSS, <br />
+              JS, <br />
+              React
+            </div>
+            <h4>FrameWorks</h4>
+            <div>Jquery, Bootstrap, Materialize, Ant Designer, Etc.</div>
+          </CardDesciption>
         </Card>
         <Card>
           <FcAcceptDatabase size={120} />
           <CardTitle>Back-end</CardTitle>
-          <CardText>desciption</CardText>
+          <CardDesciption>
+            <h4>Skills</h4>
+            <div>
+              Node.js, <br />
+              Asp classic, <br />
+              Mysql, <br />
+              AWS.
+            </div>
+          </CardDesciption>
         </Card>
         <Card>
           <FcMultipleSmartphones size={120} />
           <CardTitle>Mobile</CardTitle>
-          <CardText>desciption</CardText>
+          <CardDesciption>
+            <h4>Skill</h4>
+            <div>React Native</div>
+          </CardDesciption>
         </Card>
       </Content>
     </Container>
