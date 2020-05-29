@@ -21,7 +21,7 @@ const NavBar = () => {
 
   return (
     <Container>
-      <Image src={require("../../assets/icon.png")} alt="logo" />
+      <Image src={require("../../assets/icon.png")} alt="Logomarca" />
       <Contacts>
         <Link>Dev Skills</Link>
         <Link>Sobre</Link>
