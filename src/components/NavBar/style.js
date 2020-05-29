@@ -1,4 +1,4 @@
-import styled, { css, useUp, useDown } from "@xstyled/styled-components"
+import styled, { css, up, down } from "@xstyled/styled-components"
 
 export const Container = styled.div`
   display: flex;
@@ -9,7 +9,7 @@ export const Container = styled.div`
   padding: 4 5 4 5;
   position: relative;
   background-color: ${({ theme }) => theme.white};
-  ${useDown(
+  ${down(
     "md",
     css`
       padding: 3 4;
@@ -21,7 +21,7 @@ export const Image = styled.img`
   @media (max-width: 720px) {
     
   }
-  ${useDown(
+  ${down(
     "md",
     css`
       width: 45px;
@@ -30,7 +30,7 @@ export const Image = styled.img`
 `
 export const Contacts = styled.div`
   padding: 0 4;
-  ${useDown(
+  ${down(
     "md",
     css`
       display: none;
@@ -78,7 +78,7 @@ export const ContractsMobile = styled.div`
       }
     }
   }
-  ${useUp(
+  ${up(
     "md",
     css`
       display: none;
