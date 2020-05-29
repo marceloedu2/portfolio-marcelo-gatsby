@@ -44,15 +44,14 @@ module.exports = {
           {
             resolve: `gatsby-remark-twitter-cards`,
             options: {
-              title: siteMetadata.title,
+              title: 'Portfolio - Marcelo Eduardo Araujo - Desenvolvedor Front-end, Back-end, Mobile.',
               separator: '|',
               author: 'Marcelo Eduardo Araujo',
               background: '#FFFF',
               fontColor: '#5400C1',
               titleFontSize: 96,
               subtitleFontSize: 60,
-              fontStyle: 'roboto',
-              fontFile: url('https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap')
+              fontStyle: 'monospace',
             },
           },
         ],
