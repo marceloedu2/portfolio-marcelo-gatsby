@@ -5,13 +5,6 @@ export default {
   black: "#000",
   darkBlue: "#141c3a",
 }
-const teste = {
-  background: "#FFFF",
-  darkWhite : "#DDDD",
-  primary: "#5400C1",
-  textDefault: "rgba(10, 10, 10, 0.9)",
-  textColor: "#141c3a",
-}
 
 const DEFAULT_BREAKPOINTS = {
   xs: 0,

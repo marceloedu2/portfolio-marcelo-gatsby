@@ -8,7 +8,6 @@ export const Container = styled.div`
   width: 100%;
   padding: 0 20px;
   height: 750px;
-  border: 1px solid orange;
   @media (max-width: 720px) {
     height: auto;
   }
