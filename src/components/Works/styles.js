@@ -74,7 +74,7 @@ export const CardContent = styled.div`
   border-radius: 10px;
   background-color: rgba(84, 0, 193, 0.2);
   &:hover {
-    background-color: rgba(84, 0, 193, 0.5);
+    background-color: rgba(20, 28, 58, 0.9);
     ${Description} {
       display: flex;
       flex-direction: column;
@@ -83,6 +83,7 @@ export const CardContent = styled.div`
       margin-bottom: 20px;
       font-size: 4;
       font-weight: 400;
+      text-align: center;
       width: 200px;
       color: ${({ theme }) => theme.white};
     }
@@ -98,6 +99,10 @@ export const CardContent = styled.div`
       cursor: pointer;
       color: ${({ theme }) => theme.white};
       background-color: ${({ theme }) => theme.purple};
+      border: 1px solid rgba(20, 28, 58, 0.2);
+      &:hover {
+        border: 2px solid ${({ theme }) => theme.purple};
+      }
     }
   }
 `

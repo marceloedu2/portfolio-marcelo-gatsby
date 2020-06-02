@@ -16,7 +16,7 @@ const Works = () => {
       <Content>
         <Card image="https://i.ytimg.com/vi/TZh5L9rFTno/maxresdefault.jpg">
           <CardContent>
-            <Description>Gr8 Sistemas,Sistema de Gestão escolar</Description>
+            <Description>GR8 Sistemas,Sistema de Gestão escolar</Description>
             <Link
               href="https://www.gr8.com.br/portal/default.asp"
               target="_blank"
@@ -27,7 +27,7 @@ const Works = () => {
         </Card>
         <Card image="https://media-exp1.licdn.com/dms/image/C4D1BAQEetN7_2fxj7A/company-background_10000/0?e=2159024400&v=beta&t=VSwGXVbW-PgITxV9Yg78oQhm8OnNRw5hmKW0FCAESvE">
           <CardContent>
-            <Description>emasters, Torneios para todos</Description>
+            <Description>eMasters, Torneios para todos</Description>
             <Link href="https://www.emastersapp.com/" target="_blank">
               Conferir
             </Link>
