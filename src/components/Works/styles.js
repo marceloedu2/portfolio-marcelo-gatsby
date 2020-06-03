@@ -25,7 +25,7 @@ export const Title = styled.div`
   font-weight: bold;
   text-align: center;
   height: 60px;
-  margin-bottom: 5;
+  margin:4 0 5 0;
   color: ${props => props.theme.darkBlue};
   &:after {
     content: " ";

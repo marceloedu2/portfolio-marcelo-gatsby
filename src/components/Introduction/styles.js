@@ -8,7 +8,7 @@ export const Container = styled.div`
   align-items: center;
   text-align: center;
   width: 100%;
-  height: 800px;
+  height: 650px;
   padding: 0 20px;
   background-color: ${({ theme }) => theme.purple};
   @media (max-width: 720px) {

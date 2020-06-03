@@ -16,7 +16,7 @@ export default function Home() {
       <NavBar />
       <Preview />
       <Introduction />
-      <Skills />
+      {/*<Skills />*/}
       <Works />
       <Footer />
     </>

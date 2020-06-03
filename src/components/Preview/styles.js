@@ -8,7 +8,7 @@ export const Container = styled.div`
   align-items: center;
   text-align: center;
   width: 100%;
-  padding: 0 20px;
+  padding: 0 3;
   height: 800px;
 `
 export const Title = styled.div`
@@ -22,12 +22,12 @@ export const Title = styled.div`
 export const SubTitle = styled.div`
   font-size: 24px;
   margin-top: 10px;
-  width: 100%;
+  max-width: 850px;
   color: ${({ theme }) => theme.black};
 `
 export const Image = styled.img`
   width: 300px;
   @media (max-width: 720px) {
-    width: 100%;
+    width: 80%;
   }
 `

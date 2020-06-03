@@ -1,10 +1,23 @@
 import React from "react"
-import { Container } from "./styles"
+import { Container, ContentButton, ContentContact, ContentImage, Image } from "./styles"
+import { AiOutlineMail } from "react-icons/ai"
 
 const Footer = () => {
   return (
     <Container>
-      <h1>FOOTER</h1>
+      <ContentImage>
+        <Image src={require("../../assets/logoWhite.png")} />
+      </ContentImage>
+      <ContentButton>
+        <button onClick={() => {}}>Contatos</button>
+      </ContentButton>
+      <ContentContact>
+        <ul>
+          <li>
+            <AiOutlineMail /> Marcelo.edu@gmail.com
+          </li>
+        </ul>
+      </ContentContact>
     </Container>
   )
 }
