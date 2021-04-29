@@ -1,0 +1,29 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "08:00"
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: y18n
+    versions:
+    - 4.0.1
+  - dependency-name: gatsby-plugin-page-creator
+    versions:
+    - 2.10.0
+    - 2.9.0
+  - dependency-name: gatsby-transformer-remark
+    versions:
+    - 2.15.0
+    - 2.16.0
+  - dependency-name: gatsby-plugin-styled-components
+    versions:
+    - 3.9.0
+  - dependency-name: gatsby-plugin-google-analytics
+    versions:
+    - 2.10.0
+  - dependency-name: lodash
+    versions:
+    - 4.17.20
